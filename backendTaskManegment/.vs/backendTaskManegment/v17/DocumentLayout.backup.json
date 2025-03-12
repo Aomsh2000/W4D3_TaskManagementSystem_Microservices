@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\userwebapi\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|solutionrelative:userwebapi\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\userwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|solutionrelative:userwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\taskwebapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|solutionrelative:taskwebapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\taskwebapi\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|solutionrelative:taskwebapi\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\taskwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|solutionrelative:taskwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\userwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|solutionrelative:userwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\userwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82C8EA19-1A88-4D39-B675-4A20673CAE96}|UserWebApi\\UserWebApi.csproj|solutionrelative:userwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Migrations\\20250312043052_addNewCol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TaskWebApi\\Migrations\\20250312043052_addNewCol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\taskwebapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|solutionrelative:taskwebapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|c:\\users\\areej\\documents\\elmbootcamp\\w4d3_taskmanagementsystem_microservices\\w4d3_taskmanagementsystem_microservices\\backendtaskmanegment\\taskwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{797DB690-2AF1-4CEA-B6C6-2CA93B54EEA6}|TaskWebApi\\TaskWebApi.csproj|solutionrelative:taskwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "UserWebApi\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\UserDbContext.cs",
+              "RelativeToolTip": "UserWebApi\\UserDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T05:40:21.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UserWebApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UserWebApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T05:22:01.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UserWebApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Models\\User.cs",
+              "RelativeToolTip": "UserWebApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T05:20:32.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "TaskWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Program.cs",
+              "RelativeToolTip": "TaskWebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T23:40:53.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\TaskDbContext.cs",
+              "RelativeDocumentMoniker": "TaskWebApi\\TaskDbContext.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\TaskDbContext.cs",
+              "RelativeToolTip": "TaskWebApi\\TaskDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T00:39:21.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "TaskWebApi\\Models\\Task.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Models\\Task.cs",
+              "RelativeToolTip": "TaskWebApi\\Models\\Task.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T23:24:40.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "UserWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\UserWebApi\\Program.cs",
+              "RelativeToolTip": "UserWebApi\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T05:23:45.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250312043052_addNewCol.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Migrations\\20250312043052_addNewCol.cs",
+              "RelativeDocumentMoniker": "TaskWebApi\\Migrations\\20250312043052_addNewCol.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Migrations\\20250312043052_addNewCol.cs",
+              "RelativeToolTip": "TaskWebApi\\Migrations\\20250312043052_addNewCol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:30:52.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TaskWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TaskWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T00:17:10.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskWebApi\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\areej\\Documents\\ElmBootcamp\\W4D3_TaskManagementSystem_Microservices\\W4D3_TaskManagementSystem_Microservices\\backendTaskManegment\\TaskWebApi\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskWebApi\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T23:56:44.309Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
