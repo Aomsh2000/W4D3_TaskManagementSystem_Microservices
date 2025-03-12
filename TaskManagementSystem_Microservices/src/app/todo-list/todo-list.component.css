@@ -10,7 +10,7 @@
   }
   
   /* Styling for the form container */
-  form {
+  .addForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -24,24 +24,24 @@
   background-color: #fff;
   margin: 0 auto; 
   }
-  form div{
+  .addForm div{
   display: flex;
   flex-direction: column;
   gap: 10px;
   }
-  form label {
+  .addForm label {
     font-size: 1.1rem;
     font-weight: 500;
   }
   
-  form input {
+  .addForm input {
     padding: 0.5rem;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 1rem;
   }
   
-  form input:focus {
+  .addForm input:focus {
     border-color: #ffbf00;
     outline: none;
   }
@@ -173,7 +173,7 @@
       padding: 1rem;
     }
   
-    form {
+    .addForm {
       width: 100%;
       padding: 1rem;
     }
@@ -194,5 +194,6 @@
     button.reset-btn {
       width: 100%;
     }
+
   }
   
