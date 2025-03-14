@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "TaskWebApi.Controllers.TaskController",
-    "Method": "GetProducts",
+    "Method": "GetTasks",
     "RelativePath": "api/Task",
     "HttpMethod": "GET",
     "IsController": true,
@@ -61,7 +61,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -87,10 +87,36 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskWebApi.Controllers.TaskController",
+    "Method": "CompleteTask",
+    "RelativePath": "api/Task/{id}/complete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TaskWebApi.Models.Task",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

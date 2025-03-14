@@ -16,7 +16,7 @@ namespace TaskWebApi.Controllers
 
         // Get all tasks
         [HttpGet]
-        public ActionResult<IEnumerable<Models.Task>> GetProducts()
+        public ActionResult<IEnumerable<Models.Task>> GetTasks()
         {
             return _dbContext.Tasks;
         }
@@ -64,6 +64,22 @@ namespace TaskWebApi.Controllers
             _dbContext.Tasks.Remove(task);
             await _dbContext.SaveChangesAsync();
             return Ok();
+        }
+
+
+        // Update task to mark as complete
+        [HttpPut("{id}/complete")]
+        public async Task<ActionResult<Models.Task>> CompleteTask(string id)
+        {
+            var task = await _dbContext.Tasks.FindAsync(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+
+            task.complete = true;  // Update the task's completion status
+            await _dbContext.SaveChangesAsync();
+            return Ok(task);  // Return the updated task
         }
     }
 }

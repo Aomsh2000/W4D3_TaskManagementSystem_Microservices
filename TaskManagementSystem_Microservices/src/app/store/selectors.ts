@@ -1,11 +1,11 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store'
-import { Task } from './reducers'
+import { Task,TaskState } from './reducers'
 
-export const selectTodoState = createFeatureSelector<Task[]>('todos')
+export const selectTodoState = createFeatureSelector<TaskState>('tasks');
 
 export const selectAllTodos = createSelector(
   selectTodoState,
-  (state: Task[]) => state,
+  (state: TaskState) => state.tasks,
 )
 
 export const selectCompletedTodos = createSelector(
@@ -17,3 +17,9 @@ export const selectIncompleteTodos = createSelector(
   selectAllTodos,selectAllTodos,
   (todos: Task[]) => todos.filter(todo => !todo.complete),
 )
+
+
+export const selectTaskError = createSelector(
+  selectTodoState,
+  (state: TaskState) => state.error
+);

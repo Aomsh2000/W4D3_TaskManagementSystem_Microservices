@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store'
-import { addTask, completeTask, resetTasks, removeTask,editTask } from './actions'
+import { addTask, completeTask, resetTasks, removeTask,editTask,loadTaskFailure,loadTaskSuccess } from './actions'
 
 export type Task = {
   id: string
@@ -7,8 +7,14 @@ export type Task = {
   name: string
   isEditing?: boolean;
 }
+
 export const initialState: Task[] = []
 
+
+export interface TaskState {
+  tasks: Task[];
+  error: string | null;
+}
 export const listReducer = createReducer(
   initialState,
   on(addTask, (state, { task }) => [
@@ -27,9 +33,20 @@ export const listReducer = createReducer(
 
   on(removeTask, (state, { id }) => state.filter(task => task.id !== id)),
   on(resetTasks, () => []),
-  on(editTask, (state, { id, name }) =>
+  on(editTask, (state, { id, name }) => 
     state.map(task => 
-      task.id === id ? { ...task, name: name } : task
+      task.id === id ? { ...task, name } : task  // Update task name if ID matches
     )
-  )
+  ),
+
+  on(loadTaskSuccess, (state, { tasks }) => ({
+    ...state,
+    tasks,
+    error: null,
+  })),
+  on(loadTaskFailure, (state, { errorMessage }) => ({
+    ...state,
+    error: errorMessage,
+  }))
+  
 )

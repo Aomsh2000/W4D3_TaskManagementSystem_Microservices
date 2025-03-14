@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators, FormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { Task } from '../state/reducers';
+import { Task } from '../store/reducers';
 import { Store } from '@ngrx/store';
-import { selectAllTodos, selectCompletedTodos, selectIncompleteTodos } from '../state/selectors';
-import { addTask, completeTask, removeTask, resetTasks,editTask } from '../state/actions';
+import { selectAllTodos, selectCompletedTodos, selectIncompleteTodos,selectTaskError } from '../store/selectors';
+import { addTask, completeTask, removeTask, resetTasks,editTask,loadTask } from '../store/actions';
+import { TaskServiceService } from '../task.service.service';
+import { Injectable, inject } from '@angular/core';
 
 @Component({
   selector: 'app-todo-list',
@@ -19,12 +21,16 @@ export class TodoListComponent implements OnInit {
   todos$: Observable<Task[]>; // Observable for all tasks
   completedTodos$: Observable<Task[]>; // Observable for completed tasks
   incompleteTodos$: Observable<Task[]>; // Observable for incomplete tasks
-
+  taskApi = inject(TaskServiceService);
+  error!: Observable<string | null>;
   constructor(private fb: FormBuilder, private store: Store) {
     // Initializing Observables
-    this.todos$ = this.store.select(selectAllTodos);
+   //this.todos$ = this.store.select(selectAllTodos);
     this.completedTodos$ = this.store.select(selectCompletedTodos);
     this.incompleteTodos$ = this.store.select(selectIncompleteTodos);
+    this.store.dispatch(loadTask());
+    this.todos$ = this.store.select(selectAllTodos);
+    this.error = this.store.select(selectTaskError);
   }
 
   ngOnInit(): void {
@@ -32,6 +38,11 @@ export class TodoListComponent implements OnInit {
     this.todoForm = this.fb.group({
       name: new FormControl('', [Validators.minLength(2), Validators.required]),
     });
+       // Log tasks whenever they change
+       this.todos$.subscribe(tasks => {
+        console.log('Updated tasks after state change:');
+        tasks.forEach(task => console.log(`Task ID: ${task.id}, Name: ${task.name}`));
+      });
   }
 
   onSubmit() {
@@ -68,84 +79,35 @@ export class TodoListComponent implements OnInit {
     // Dispatch action to reset all tasks (if implemented)
     this.store.dispatch(resetTasks());
   }
- /*  toggleEdit(todo: Task): void {
-  const todoName = document.getElementById(`todo-name-${todo.id}`);
-  const editForm = document.getElementById(`editform-${todo.id}`);
-
-  // Toggle visibility based on the current state
-  if (todoName && editForm) {
-    if (todoName.style.display === 'none') {
-      todoName.style.display = 'block';
-      editForm.style.display = 'none';
-      todo.isEditing = true;
-    } else {
-      todoName.style.display = 'none';
-      editForm.style.display = 'block';
-      todo.isEditing = false;
-    }
-  }
-    // Initialize the edit form with the current task name
-    if (todo.isEditing) {
-      this.editForm = this.fb.group({
-        name: new FormControl(todo.name, [Validators.minLength(2), Validators.required]),
-      });
-    }
-  } */
-    toggleEdit(todo: Task): void {
-      // Toggle the editing state of the task
-      todo.isEditing = !todo.isEditing;
-      const todoName = document.getElementById(`todo-name-${todo.id}`);
-      const editForm = document.getElementById(`editform-${todo.id}`);
     
-      // Toggle visibility based on the current state
-      if (todoName && editForm) {
-        if (todoName.style.display === 'none') {
-          todoName.style.display = 'block';
-          editForm.style.display = 'none';
+    editTask(id: string): void {
 
-        } else {
-          todoName.style.display = 'none';
-          editForm.style.display = 'block';
-         
+          
+        // Get the todo element by id
+        const todoName = document.getElementById(`todo-name-${id}`) as HTMLInputElement;
+        
+        // Check if the todoName exists and get its value
+        if (todoName) {
+          const oldTitle = todoName.value; // Get the current value of the todo input
+          const newTitle = prompt("Enter new title:", oldTitle); // Use oldTitle as the default in the prompt
+    
+          // If the user enters a new title and it's not null
+          if (newTitle  &&  newTitle.trim().length >= 2){
+            this.store.dispatch(editTask({ id, name: newTitle }));
+            
+          }
+          else if (newTitle === null) {
+              // Handle the case when the user presses "Cancel"
+              console.log('User canceled the edit operation');
+            } else if (newTitle.trim().length < 2) {
+              // Handle the case where the newTitle is too short
+              console.log('Title should be at least 2 characters');
+            }
         }
-      }
-      // Initialize the edit form with the current task name
-      if (todo.isEditing) {
-        this.editForm = this.fb.group({
-          name: new FormControl(todo.name, [Validators.minLength(2), Validators.required]),
-        });
-      }
+      
     }
-  editTodo(id: string): void {
-    if (this.editForm.valid) {
-      console.log('Form Value:', this.editForm.value);
-      const updatedName = this.editForm.value.name;
-      this.store.dispatch(editTask({ id, name: updatedName }));
-  
-     
+    
+
    
-    }
   }
 
-  /* toggleEdit(): void {
-    // Find the elements you want to toggle
-    const todoName = document.getElementById(`todo-name`);
-    const editForm = document.getElementById(`editform`);
-
-    // Toggle visibility based on the current state
-    if (todoName && editForm) {
-      if (todoName.style.display === 'none') {
-        todoName.style.display = 'block';
-        editForm.style.display = 'none';
-      } else {
-        todoName.style.display = 'none';
-        editForm.style.display = 'block';
-      }
-    }
-  }
-
-  editTodo(id: string, name: string): void {
-    // Dispatch the editTask action with the updated name
-    this.store.dispatch(editTask({ id, name }));
-  } */
-}

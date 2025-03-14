@@ -21,18 +21,10 @@
   <!-- Use unique ID for todo-name -->
   <span [id]="'todo-name-' + todo.id" class="todo-name">{{ todo.name }}</span>
 
-  <!-- Use unique ID for editform -->
- <!--  <form
-  [formGroup]="editForm!"
-  (ngSubmit)="editTodo(todo.id)"
-  [id]="'editform-' + todo.id"
-  style="display: none;"
-> 
-  <input formControlName="name" [value]="todo.name" />
-  <button type="submit">Save</button>
-</form> -->
+
+  
   <div class="todo-actions">
-   <!--  <button (click)="toggleEdit(todo)" id="edit-btn">edit</button> -->
+    <button (click)="editTask(todo.id)" id="edit-btn">✎</button>
     <button *ngIf="!todo.complete" (click)="completeTodo(todo.id)" class="complete-btn">
       ✓
     </button>
@@ -43,7 +35,6 @@
     </ul>
   </div>
 
-  <button (click)="resetAllTodos()" class="reset-btn" *ngIf="(todos$ | async)!.length > 0">
+ <button (click)="resetAllTodos()" class="reset-btn" *ngIf="(todos$ | async)!.length > 0">
     Reset All Tasks
-  </button>
-</div>
+  </button></div>
